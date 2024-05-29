@@ -1,5 +1,8 @@
-let obj = { a: 1, b: 2, c: 3 }; 
-let objKeys = Object.keys(obj);
+const obj = { a: 1, b: 2, c: 3 }; 
 
-objKeys=objKeys.map(item=>item.toUpperCase());
-console.log(obj);
+let upperKeys = Object.keys(obj).reduce((acc, item)=>{
+    acc[item.toUpperCase()] = obj[item];
+    return acc;
+},{});
+
+console.log(upperKeys);
