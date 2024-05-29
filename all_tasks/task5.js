@@ -1,10 +1,8 @@
 let obj = { a: 1, b: 2, c: 3 };
 
 
-Object.entries(obj).reduce((acc, [a,b])=>{
-     acc[b] = a;
-    return console.log(acc);
-    
-}, {});
-
-// Task 5 basa dusmedim , yaza bilmedim
+let invertedObj = Object.keys(obj).reduce((acc, value)=>{
+    acc[obj[value]] = value;
+    return acc;
+},{});
+console.log(invertedObj);
