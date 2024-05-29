@@ -6,4 +6,5 @@
 // import "./all_tasks/task6.js";
 // import "./all_tasks/task7.js";
 // import "./all_tasks/task8.js";
-import "./all_tasks/task9.js";
+// import "./all_tasks/task9.js";
+import "./all_tasks/task10.js";
